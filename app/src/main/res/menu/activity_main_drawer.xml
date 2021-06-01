@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_home" />
+        <item android:id="@+id/nav_certificate" android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_certificate" />
+        <item android:id="@+id/nav_custom" android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_customservices" />
+        <item android:id="@+id/nav_govtscheme" android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_govtscheme" />
+        <item android:id="@+id/nav_govtportals" android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_govtportals" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Contact_us"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_contactus" />
+            <item
+                android:id="@+id/nav_Feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_feedback" />
+        </menu>
+
+    </item>
+    <item android:title="Activity">
+        <menu>
+            <item
+                android:id="@+id/Log_out"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_logout" />
+
+        </menu>
+
+
+    </item>
+</menu>

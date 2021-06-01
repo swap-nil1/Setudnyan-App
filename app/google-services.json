@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "914060141057",
+    "project_id": "setudnyan-application",
+    "storage_bucket": "setudnyan-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914060141057:android:e721cbf8cd6f68a1a3d600",
+        "android_client_info": {
+          "package_name": "com.example.setudnyanapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914060141057-1at7ff9q8lsdfq2iirg4q8bot9hto0i5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJb26YBp1dyDVpgTR_65lGmq2c8EPmO5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914060141057-1at7ff9q8lsdfq2iirg4q8bot9hto0i5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

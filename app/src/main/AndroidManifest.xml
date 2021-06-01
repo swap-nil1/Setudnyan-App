@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.setudnyanapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_setudnyan3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_setudnyan3_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SetudnyanApplication"
+        android:fullBackupContent="false">
+        <activity android:name=".SchemeDetailActivity" />
+        <activity android:name=".CertificateDetailsActivity2" />
+        <activity android:name=".MahaEsevaFormActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.setudnyanapplication.NavigationDrawerActivity2" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".CustomServiceActivity" />
+        <activity android:name=".GovnmentSchemeActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".GovnmentPortalsActivity"/>
+        <activity android:name=".CertificateActivity" />
+        <activity
+            android:name=".NavigationDrawerActivity2"
+            android:label="@string/title_activity_navigation_drawer2"
+            android:theme="@style/Theme.SetudnyanApplication.NoActionBar" /> <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

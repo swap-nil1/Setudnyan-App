@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Setudnyan Application</string>
+    <string name="title_activity_navigation_drawer2">NavigationDrawerActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome</string>
+    <string name="nav_header_subtitle">setudnyansupport@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_certificate">Certificates Details</string>
+    <string name="menu_customservices">Custom Services</string>
+    <string name="menu_govtscheme">Government Schemes</string>
+    <string name="menu_govtportals">Government Portals</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_logout">Log Out</string>
+
+    <string name="selectcert">Select Certificate</string>
+    <string name="hyperlink1"><a href="https://uidai.gov.in">uidai.gov.in</a></string>
+    <string name="hyperlink2"><a href="https://mahadbtmahait.gov.in">mahadbtmahait.gov.in</a></string>
+    <string name="hyperlink3"><a href="https://www.pan.utiitsl.com">pan.utiitsl.com</a></string>
+    <string name="hyperlink4"><a href="https://wss.mahadiscom.in">mahadiscom.in</a></string>
+    <string name="hyperlink5"><a href="https://bhulekh.mahabhumi.gov.in">bhulekh.mahabhumi.gov.in</a></string>
+    <string name="hyperlink6"><a href="https://www.vidyalakshmi.co.in">vidyalakshhmi.co.in</a></string>
+    <string name="hyperlink7"><a href="https://www.pmkisan.gov.in">pmkisan.gov.in</a></string>
+    <string name="hyperlink8"><a href="https://krishi.maharashtra.gov.in">krishi.maharashtra.gov.in</a></string>
+    <string name="textbtnlogin">Login</string>
+    <string name="textviewuserid">User ID</string>
+    <string name="textviewpassword">Password</string>
+    <string name="textviewcontactus">Contact Us</string>
+    <string name="textbtnsend">Send</string>
+    <string name="textviewfeedback">Feedback</string>
+    <string name="textbtnsendfeedback">Send</string>
+    <string name="multilinetextenter_message">Enter Message</string>
+    <string name="textview1scheme">Aayushman Bharat Yogna</string>
+    <string name="textviewsetudnyan_app">Setudnyan App</string>
+    <string name="textviewcreate_new_account">Create New Account</string>
+    <string name="textviewregister">Register</string>
+    <string name="edittextname">Name</string>
+    <string name="edittextemail">Email</string>
+    <string name="edittextpassword">Password</string>
+    c
+    <string name="textviewpradhan_mantri_jeevan_jyoti_bima_yojana">Pradhan Mantri Jeevan Jyoti Bima Yojana</string>
+    <string name="textpradhan_mantri_jan_dhan_yojana">Pradhan Mantri Jan Dhan Yojana</string>
+    <string name="textsampoorna_grameen_rozgar_yojana">Sampoorna Grameen Rozgar Yojana</string>
+    <string name="textpradhan_mantri_awas_yojana">Pradhan Mantri Awas Yojana</string>
+    <string name="textpradhan_mantri_suraksha_bima_yojana">Pradhan Mantri Suraksha Bima Yojana</string>
+    <string name="textkasturba_gandhi_balika_vidyalaya">Kasturba Gandhi Balika Vidyalaya</string>
+    <string name="textpradhan_mantri_adarsh_gram_yojana">Pradhan Mantri Adarsh Gram Yojana</string>
+    <string name="textname">Name</string>
+    <string name="text_7_12">7/12 उत्तरा</string>
+    <string name="textration">रेशन कार्ड</string>
+    <string name="text_8">8 अ</string>
+    <string name="textresidental">रेडिसिडेंटल प्रमाणपत्र</string>
+    <string name="texttalathi">तलाठी भूमीहिन दाखला</string>
+    <string name="textcast">कास्ट प्रमाणपत्र</string>
+    <string name="texttahalincome">तलाटी उत्पन्न दाखला</string>
+    <string name="textforgot_password">Forgot Password ?</string>
+    <string name="textregister">Register</string>
+    <string name="contactus3surajshady313_gmail_com">surajshady313@gmail.com</string>
+    <string name="contact2ohgangamwar_gmail_com">ohgangamwar@gmail.com</string>
+    <string name="conact1swapnilbhuite888_gmail_com">swapnilbhuite888@gmail.com</string>
+    <string name="contactemailsetudnyansupport_gmail_com">setudnyansupport@gmail.com</string>
+    <string name="textbirthcerti">जन्म प्रमाणपत्राची प्रत</string>
+    <string name="textvoter">मतदार ओळखपत्र</string>
+    <string name="textaadhhar">आधार कार्ड</string>
+    <string name="textdriving_licence">Driving Licence</string>
+    <string name="textphone_number">Phone Number</string>
+    <string name="scheme1details">1.concentration of tribal population, with low female literacy and/or many girls out of school.\n
+2.concentration of SC, ST, OBC and minority populations, with low female literacy and/or many girls out of school.\n
+3.areas with low female literacy.\n
+4.areas with many small, scattered habitations that do not qualify for a school.\n
+     75% enrollment is reserved for girls from SC, ST, OBC and Minority communities and the other 25% to girls from families below the poverty line.</string>
+    <string name="scheme2details">Pradhan Mantri Adarsh Gram Yojana (PMAGY) is a rural development programme launched by the central government in India in the financial year 2009–10 for the development of villages having a higher ratio (over 50%) of people belonging to the scheduled castes through convergence of central and state schemes and allocating financial funding on a per village basis.
+    The aim of the scheme is to integrated development of the selected villages so that they have all required physical and social infrastructure for an all round socio-economic development</string>
+    <string name="scheme3deitals">Condition for PMAY: (a) Beneficiary max age 70 years, (b) EWS (Economic Weaker Section) family income limit is ₹3 lakhs per annum and for LIG (Lower Income Group) Family Income limit is ₹6 Lakhs per annum,[14] and Middle Income Group -(MIG-I) income between ₹6 lakhs to ₹12 lakhs per annum, (MIG-II) income between ₹12 lakhs to ₹18 lakhs per annumc) The beneficiary should not have an own dwelling unit on the name of any family member in any part of India.d)The loan applicant should not have availed any central/state government subsidy or benefit for buying a home under the PMAY scheme. e)Currently, the loan applicant should not own any property under their name and along with any of the family members (including the dependents). f)The home renovation or improvement loans, self-construction loans will be allocated only for EWS and LIG categories.</string>
+
+    <string name="scheme4details">Pradhan Mantri Suraksha Bima Yojana is available to people (Indian Resident or NRI) between 18 and 70 years of age with bank accounts. It has an annual premium of ₹12 (17¢ US) exclusive of taxes. The GST is exempted on Pradhan Mantri Suraksha Bima Yojana. The amount is automatically debited from the account. This insurance scheme can have one year cover from 1 June to 31 May and would be offered through banks and administered through public sector general insurance companies.
+In case of unexpected death or full disability, the payment to the nominee will be ₹2 lakh (US$2,800) and in case of partial Permanent disability ₹1 lakh (US$1,400). Full disability has been defined as loss of use in both eyes, hands or feet. Partial Permanent disability has been defined as loss of use in one eye, hand or foot.Further, death due to suicide, alcohol, drug abuse, etc. are not covered.
+This scheme will be linked to the bank accounts opened under the Pradhan Mantri Jan Dhan Yojana scheme. Most of these account had zero balance initially. The government aims to reduce the number of such zero balance accounts by using this and related schemes.Now all Bank account holders can avail this facility through their net-banking service facility at any time of the year.</string>
+    <string name="textopen">Open</string>
+    <string name="textdetails">Details</string>
+    <string name="setu_logo">Setu Logo</string>
+    <string name="textviewfill_form">Fill Form</string>
+    <string name="edittextapplicant_name">Applicant Name</string>
+    <string name="textviewservices">Services</string>
+    <string name="edittextappointment">Appointment</string>
+    <string name="textviewcopy">Copy</string>
+    <string name="textviewcity">City</string>
+    <string name="textviewcenter">Center</string>
+    <string name="btnservice">Service</string>
+    <string name="textviewdesc"><p>1 प्राप्ती प्रमाणपत्रासाठी अर्ज करण्यासाठी अर्जदारास ठासीलदार / उपविभागीय अधिकारी / उपविभागीय अधिकारी यांच्या संबंधित कार्यालयात जावे लागेल.<br></br>
+        <br />आवश्यक कागदपत्रांसह पूर्ण केलेला अर्ज संबंधित प्राधिकरणास पाठवा.<br />
+    <br />पडताळणीनंतर अधिकारी संबंधित निर्णय देणा authority्या अधिका their्यांना आपला अहवाल सादर करतील.<br />
+       <br />सादर केलेल्या अहवालाच्या आधारे संबंधित प्राधिकरण उत्पन्नाचे प्रमाणपत्र देण्याचा निर्णय घेईल.<br /></p><br />
+        <br />२ किंवा आपलेसरकर मार्फत अर्ज करा</string>
+    <string name="textviewc">ऑफलाइन प्रक्रिया<br />
+        <p>1 अर्जदार जवळच्या तहसीलदार कार्यालयात जाऊन अर्ज प्राप्त करू शकतो.<br></br>
+        <br></br>अर्ज भरल्यानंतर सर्व आवश्यक कागदपत्रे जोडा.<br></br>
+        <br></br>त्यानंतर निर्धारित फीसह अर्ज आणि कागदपत्रे सादर करा.<br></br>
+            <br></br>अर्जदारास नोंदणी शुल्क म्हणून पाच रुपये शुल्क आकारले जाईल. त्यामुळे अर्जदारास निर्दिष्ट वेळेत जात प्रमाणपत्र मिळविण्यासाठी सूचित केले जाईल.<br></br></p>
+        <br></br>ऑनलाईन प्रक्रिया<br></br>
+        <br></br>महाराष्ट्राचे अधिकृत पोर्टल वापरणे,<br></br>
+        aaplesarkar.mahaonline.gov.in</string>
+
+
+</resources>
