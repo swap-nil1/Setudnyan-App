@@ -30,7 +30,6 @@
         android:textAlignment="viewStart"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:drawableEndCompat="@drawable/ic_baseline_file_copy_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"

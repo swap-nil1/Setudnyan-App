@@ -7,6 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
@@ -14,8 +21,10 @@ import java.util.Objects;
 
 public class SchemeDetailActivity extends AppCompatActivity {
     int PressedId;
-    String title;
+    String title,value;
     TextView txt1,textViewdetails;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +35,7 @@ public class SchemeDetailActivity extends AppCompatActivity {
         textViewdetails=(TextView)findViewById(R.id.textView11);
         PressedId=getIntent().getExtras().getInt("ButtonNumber");
         title=getIntent().getExtras().getString("title");
+
         switch (PressedId)
         {
             case 1: {
@@ -52,6 +62,19 @@ public class SchemeDetailActivity extends AppCompatActivity {
             case 5:
             {
                 txt1.setText(title);
+                textViewdetails.setText(getString(R.string.scheme5));
+                break;
+            }
+            case 6:
+            {
+                txt1.setText(title);
+                textViewdetails.setText(getString(R.string.scheme6));
+                break;
+            }
+            case 7:
+            {
+                txt1.setText(title);
+                textViewdetails.setText(getString(R.string.scheme7));
                 break;
             }
             default:

@@ -11,11 +11,15 @@ import android.content.SharedPreferences;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,24 +47,39 @@ public class MainActivity extends AppCompatActivity {
     InputMethodManager imm;
     ProgressBar psbar;
     TextView textViewforgot, textviewReg;
-
+    ImageView img;
+    int totalAttempts = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_login = (Button) findViewById(R.id.log_btn);
+        btn_login = findViewById(R.id.log_btn);
         psbar = findViewById(R.id.progressBar);
-        textviewReg = (TextView) findViewById(R.id.textViewRegister2);
+        img=findViewById(R.id.imageView3);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation aniRotateClk = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_anticlockwise);
+                img.startAnimation(aniRotateClk);
+            }
+        });
+        textviewReg = findViewById(R.id.textViewRegister2);
         textViewforgot = findViewById(R.id.textViewforgotps);
 
-        usr = (EditText) findViewById(R.id.log_username);
+        usr = findViewById(R.id.log_username);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(usr, InputMethodManager.SHOW_IMPLICIT);
 
-        pass = (EditText) findViewById(R.id.log_password);
+        pass = findViewById(R.id.log_password);
         imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(pass, InputMethodManager.SHOW_IMPLICIT);
+        pass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+        pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
        // FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser() ;
         if(FirebaseAuth.getInstance()!=null)
         {
@@ -96,36 +115,67 @@ public class MainActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 userEmail = usr.getText().toString().trim();
                 userPass = pass.getText().toString().trim();
-
-                if (TextUtils.isEmpty(userEmail)) {
-                    usr.setError("Email Required");
-                    return;
-                }
-                if (TextUtils.isEmpty(userPass)) {
-                    pass.setError("Password Required");
-                    return;
-                }
-                if (userPass.length() < 6) {
-                    pass.setError("Password Must be Greater than 6 Character");
-                    return;
-                }
-                psbar.setVisibility(View.VISIBLE);
-                firebaseAuth.signInWithEmailAndPassword(userEmail, userPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                            intent = new Intent(MainActivity.this, NavigationDrawerActivity2.class);
-                            startActivity(intent);
-                        } else {
-                            psbar.setVisibility(View.INVISIBLE);
-                            Toast.makeText(MainActivity.this, "Errro" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                if (totalAttempts != 0)
+                {
+                    if (TextUtils.isEmpty(userEmail)) {
+                        usr.setError("Email Required");
+                        return;
+                    }
+                    if (TextUtils.isEmpty(userPass)) {
+                        pass.setError("Password Required");
+                        return;
+                    }
+                    if (userPass.length() < 6) {
+                        pass.setError("Password Must be Greater than 6 Character");
+                        return;
+                    }
+                    psbar.setVisibility(View.VISIBLE);
+                    firebaseAuth.signInWithEmailAndPassword(userEmail, userPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                                intent = new Intent(MainActivity.this, NavigationDrawerActivity2.class);
+                                startActivity(intent);
+                            } else {
+                                totalAttempts--;
+                                psbar.setVisibility(View.INVISIBLE);
+                                Toast.makeText(MainActivity.this, "Errro" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
                         }
+                    });
+                }
+                else
+                {
+                    final AlertDialog.Builder buil;
+                    buil = new AlertDialog.Builder(MainActivity.this);
+                    buil.setMessage("3 Login attempts is over!");
+                    buil.setCancelable(false);
+                    buil.setNegativeButton("Cancel", new OnClickListener(){
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i)
+                        {
+                            dialogInterface.cancel();
+                        }
+
+                    }); buil.setPositiveButton("Confirm", new OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+                       /* intent=new Intent(MainActivity.this,MainActivity.class);
+                        intent.putExtra("finish",true);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);*/
+                        dialogInterface.dismiss();
+                        finish();
                     }
                 });
-
+                    AlertDialog builder=buil.create();
+                    builder.show();
+                }
             }
         });
     }

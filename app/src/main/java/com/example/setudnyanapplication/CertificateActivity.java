@@ -36,18 +36,43 @@ public class CertificateActivity extends AppCompatActivity{
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificate);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("");
-        cb2=(CheckBox)findViewById(R.id.checkBox2);
-        btnopen=(Button)findViewById(R.id.btn_open);
-        certificatespinner=(Spinner)findViewById(R.id.spinnercertificateView);
-        textView1=(TextView)findViewById(R.id.textViewdecription);
+        cb2= findViewById(R.id.checkBox2);
+        btnopen= findViewById(R.id.btn_open);
+        certificatespinner= findViewById(R.id.spinnercertificateView);
+        textView1= findViewById(R.id.textViewdecription);
         setupadapter();
         //certificatespinner.setOnClickListener((View.OnClickListener) this);
         certificatespinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             public void onItemSelected(AdapterView<?> arg0, View view, int position, long id)
             {
+                switch(position)
+                {
+                    case 0:
+                    {
+                        textView1.setText(getText(R.string.textviewdesc));
+                        break;
+                    }
+                    case 1:
+                    {
+                        textView1.setText(getText(R.string.textviewc));
+                    }break;
+                   /* case 2:
+                    {
+                        textView1.setText(getText(R.string.textnoncriminal));
+                    }break;
+                    case 3:
+                    {
+                        textView1.setText(getText(R.string.textSECcert));
+                    }break;
+                    case 4:
+                    {
+                        textView1.setText(getText(R.string.textfarmer));
+                    }break;*/
+                }
+
                 btnopen.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v)
@@ -57,14 +82,6 @@ public class CertificateActivity extends AppCompatActivity{
                         i.putExtra("position", positionOfSelectedDataFromSpinner);
                         startActivity(i);
 
-                        if(position==0)
-                        {
-                            textView1.setText(getText(R.string.textviewdesc));
-                        }
-                        else if(position==1)
-                        {
-                            textView1.setText(getText(R.string.textviewc));
-                        }
                     }
                 });
             }

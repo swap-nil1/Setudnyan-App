@@ -90,19 +90,36 @@ This scheme will be linked to the bank accounts opened under the Pradhan Mantri 
     <string name="textviewcity">City</string>
     <string name="textviewcenter">Center</string>
     <string name="btnservice">Service</string>
-    <string name="textviewdesc"><p>1 प्राप्ती प्रमाणपत्रासाठी अर्ज करण्यासाठी अर्जदारास ठासीलदार / उपविभागीय अधिकारी / उपविभागीय अधिकारी यांच्या संबंधित कार्यालयात जावे लागेल.<br></br>
+    <string name="textviewdesc"><p>1 प्राप्ती प्रमाणपत्रासाठी अर्ज करण्यासाठी अर्जदारास ठासीलदार / उपविभागीय अधिकारी / उपविभागीय अधिकारी यांच्या संबंधित कार्यालयात जावे लागेल.<br />
         <br />आवश्यक कागदपत्रांसह पूर्ण केलेला अर्ज संबंधित प्राधिकरणास पाठवा.<br />
     <br />पडताळणीनंतर अधिकारी संबंधित निर्णय देणा authority्या अधिका their्यांना आपला अहवाल सादर करतील.<br />
        <br />सादर केलेल्या अहवालाच्या आधारे संबंधित प्राधिकरण उत्पन्नाचे प्रमाणपत्र देण्याचा निर्णय घेईल.<br /></p><br />
         <br />२ किंवा आपलेसरकर मार्फत अर्ज करा</string>
     <string name="textviewc">ऑफलाइन प्रक्रिया<br />
-        <p>1 अर्जदार जवळच्या तहसीलदार कार्यालयात जाऊन अर्ज प्राप्त करू शकतो.<br></br>
-        <br></br>अर्ज भरल्यानंतर सर्व आवश्यक कागदपत्रे जोडा.<br></br>
-        <br></br>त्यानंतर निर्धारित फीसह अर्ज आणि कागदपत्रे सादर करा.<br></br>
-            <br></br>अर्जदारास नोंदणी शुल्क म्हणून पाच रुपये शुल्क आकारले जाईल. त्यामुळे अर्जदारास निर्दिष्ट वेळेत जात प्रमाणपत्र मिळविण्यासाठी सूचित केले जाईल.<br></br></p>
-        <br></br>ऑनलाईन प्रक्रिया<br></br>
-        <br></br>महाराष्ट्राचे अधिकृत पोर्टल वापरणे,<br></br>
+        <p>1 अर्जदार जवळच्या तहसीलदार कार्यालयात जाऊन अर्ज प्राप्त करू शकतो.<br />
+        <br />अर्ज भरल्यानंतर सर्व आवश्यक कागदपत्रे जोडा.<br />
+        <br />त्यानंतर निर्धारित फीसह अर्ज आणि कागदपत्रे सादर करा.<br />
+            <br />अर्जदारास नोंदणी शुल्क म्हणून पाच रुपये शुल्क आकारले जाईल. त्यामुळे अर्जदारास निर्दिष्ट वेळेत जात प्रमाणपत्र मिळविण्यासाठी सूचित केले जाईल.<br /></p>
+        <br />ऑनलाईन प्रक्रिया<br />
+        <br />महाराष्ट्राचे अधिकृत पोर्टल वापरणे,<br />
         aaplesarkar.mahaonline.gov.in</string>
-
-
+    <string name="textnoncriminal">Buy an Rs. 20 Stamp Paper
+Procure an affidavit from the Notary Advocate
+Attach the required documents signed by either the parent or guardian
+Submit to the VAO
+Consequently, from VAO, it is passed on to the RI and finally to the Tahsildar</string>
+    <string name="textSECcert">Go to the barangay where your business is located to secure and fill-up application form.
+Submit your completed application form together with the following: Certificate of Business Registration from SEC. Two (2) valid IDs.</string>
+    <string name="textfarmer">Log on to the Meeseva Select Revenue Department
+Select Issue of Small and Marginal Farmer Certificate Service
+Issue of Small and Marginal Farmer Certificate Request Screen
+Enter personal details
+Enter land details
+Enter Informant Details
+Uploading the Documents
+Application Payment
+Delivery of the Application</string>
+    <string name="scheme5">The coverage amount offered by the Pradhan Mantri Jeevan Jyoti Bima Yojana is Rs. 2 lakh. The coverage is offered to the beneficiary of the scheme in case of uncertain death of the policyholder during the tenure of the policy. The life insurance coverage as death benefit offered to the nominee is tax-free.</string>
+    <string name="scheme6">The primary objective of the Scheme is to provide additional and supplementary wage employment and thereby provide food security and improve nutritional levels in all rural areas. The secondary objective is the creation of durable community, social and economic assets and infrastructural development in rural areas.</string>
+    <string name="scheme7">Pradhan Mantri Jan-Dhan Yojana is a government scheme launched by the government of India to provide easy access to financial services such as Remittance, Credit, Insurance, Pension, Savings and Deposit Accounts to poor and needy section of our society.</string>
 </resources>

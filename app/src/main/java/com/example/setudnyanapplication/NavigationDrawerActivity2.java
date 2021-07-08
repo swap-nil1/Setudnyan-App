@@ -1,11 +1,10 @@
 package com.example.setudnyanapplication;
+import android.annotation.TargetApi;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.method.LinkMovementMethod;
-import android.text.style.ImageSpan;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.view.View;
@@ -42,6 +41,7 @@ public class NavigationDrawerActivity2 extends AppCompatActivity implements Navi
     Intent intent;
     TextView textView1;
     ViewFlipper vflip;
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -51,14 +51,13 @@ public class NavigationDrawerActivity2 extends AppCompatActivity implements Navi
        /* ImageSpan is=new ImageSpan(NavigationDrawerActivity2.this, R.drawable.income_cert);
        // SpannableString text=new SpannableString("Income Certificate");
         textView1.setSpan(is,text.length()-2,text.length(),0);*/
-        vflip=(ViewFlipper) findViewById(R.id.ViewFlipper);
+        vflip= findViewById(R.id.ViewFlipper);
 
 
         int images[]={R.drawable.pancard,R.drawable.aadhar2,R.drawable.income_cert
                 ,R.drawable.mahadbt,R.drawable.maharashtrakrishivibhag,R.drawable.vidyalakshmilogo};
-        for(int i=0;i<images.length;i++)
-        {
-            ViewFlippers(images[i]);
+        for (int value : images) {
+            ViewFlippers(value);
         }
         drawer = findViewById(R.id.drawer_layout);
         toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -143,7 +142,7 @@ public class NavigationDrawerActivity2 extends AppCompatActivity implements Navi
       @Override
       public void onBackPressed()
       {
-          drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+          drawer = findViewById(R.id.drawer_layout);
           if (drawer.isDrawerOpen(GravityCompat.START))
           {
               drawer.closeDrawer(GravityCompat.START);

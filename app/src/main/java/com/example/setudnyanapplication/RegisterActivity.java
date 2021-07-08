@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -48,6 +49,7 @@ public class RegisterActivity extends AppCompatActivity
         imm.showSoftInput(textV1, InputMethodManager.SHOW_IMPLICIT);
         textV2=(EditText) findViewById(R.id.editTextTextPersonEmail);
         textV3=(EditText) findViewById(R.id.editTextTextPersonPassword);
+        textV3.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
         textV4=(EditText) findViewById(R.id.editTextTextPersonPhone);
         firebaseAuthuth=FirebaseAuth.getInstance();
         sharedPreferences = getApplicationContext().getSharedPreferences("Reg", 0);
